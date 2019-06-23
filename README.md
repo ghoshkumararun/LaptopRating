@@ -11,6 +11,6 @@ Please download, setup and run using ng serve. You can use VS code for the chang
 There are two services :
 
 "/all" - service provide all laptop details	
-"/update/{lapid}/{rating}" - rating submit - and provide the average rating on the product.
+"/update/{lapid}/{rating}" - rating submit - and provide the average rating of the product.
 
 
