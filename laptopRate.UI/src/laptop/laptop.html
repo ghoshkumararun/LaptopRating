@@ -1,0 +1,35 @@
+<div class="row"></div>
+<ul class="list-inline">
+  <li class="list-inline-item" *ngFor="let laptop of laptops;">
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="../assets/{{laptop.image}}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{laptop.name}}</h5>
+        <p class="card-text">{{laptop.description}}</p>
+        <p>
+          Avg Rating
+          <span class="fa fa-star" [hidden]="laptop.rating<1"></span>
+          <span class="fa fa-star" [hidden]="laptop.rating<2"></span>
+          <span class="fa fa-star" [hidden]="laptop.rating<3"></span>
+          <span class="fa fa-star" [hidden]="laptop.rating<4"></span>
+          <span class="fa fa-star" [hidden]="laptop.rating<5"></span>
+          <span class="fa fa-star" [hidden]="laptop.rating<6"></span>
+          <span class="fa fa-star" [hidden]="laptop.rating<7"></span>
+          <span class="fa fa-star" [hidden]="laptop.rating<8"></span>
+          <span class="fa fa-star" [hidden]="laptop.rating<9"></span>
+          <span class="fa fa-star" [hidden]="laptop.rating<10"></span>
+        </p>
+        <p>
+          
+          <input #textbox type="text" placeholder="Your Rating" />
+        </p>
+        <button (click)="onRating(laptop,textbox.value)" class="btn-btn-primary">Submit</button>
+        
+        
+      </div>
+    </div>
+  </li>
+  <p style="color:red" [hidden]="!invalidNumer">
+      *Invalid rating
+    </p>
+</ul>
