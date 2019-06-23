@@ -10,7 +10,7 @@ Please download, setup and run using ng serve. You can use VS code for the chang
 
 There are two services :
 
-@GetMapping("/all") - service provide all laptop details	
-@GetMapping("/update/{lapid}/{rating}") - rating submit - and provide the average rating on the product.
+"/all" - service provide all laptop details	
+"/update/{lapid}/{rating}" - rating submit - and provide the average rating on the product.
 
 
